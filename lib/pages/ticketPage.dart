@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
 
-class Tickets extends StatelessWidget {
-  const Tickets({Key? key}) : super(key: key);
+class NewTickets extends StatelessWidget {
+  const NewTickets({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        title: const Text('Post Ticket'),
+      ),
       body: Column(
         children: [
           Center(
@@ -17,7 +20,7 @@ class Tickets extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Padding(
@@ -51,7 +54,7 @@ class Tickets extends StatelessWidget {
                     Container(
                       padding: EdgeInsets.all(15),
                       decoration: BoxDecoration(),
-                      child: Text(
+                      child: const Text(
                         'Lorem Ipsum cogito ergo sum descarte dummy text Lorem '
                         'Ipsum cogito ergo sum descarte dummy text Lorem Ipsum cogito '
                         'ergo sum descarte dummy text Lorem Ipsum cogito ergo sum descarte dummy '
@@ -63,12 +66,12 @@ class Tickets extends StatelessWidget {
                     ),
                     Spacer(),
                     Container(
-                      margin: EdgeInsets.symmetric(vertical: 20),
-                      padding: EdgeInsets.symmetric(horizontal: 10),
+                      margin: const EdgeInsets.symmetric(vertical: 20),
+                      padding: const EdgeInsets.symmetric(horizontal: 10),
                       width: 400,
                       height: 50,
                       child: ElevatedButton(
-                        onPressed: () => null,
+                        onPressed: () => NewTickets,
                         child: const Text(
                           'Submit',
                           style: TextStyle(fontSize: 16.0),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'ticketPage.dart' as tickets;
+import 'ticketsList.dart' as tickets;
 import 'accountPage.dart' as accounts;
 import 'chatPage.dart' as chats;
 
@@ -31,7 +31,7 @@ class HomePage extends StatelessWidget {
           ),
           body: TabBarView(
             children: [
-              const tickets.Tickets(),
+              const tickets.TicketsList(),
               chats.Chats(),
               accounts.Account()
             ],
